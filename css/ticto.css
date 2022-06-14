@@ -1,0 +1,34 @@
+html {background-color: black; width: 100%; height: 100%;}
+body {background-color: black;}
+#container {text-align: center; background-color: black; display: none;}
+
+.loadingBg {width:100%; height:100%; position: absolute; object-fit : cover;}
+.loadingarea {height:10%; width: 100%; position: absolute; top: 40%; left: 35%;}
+.loadingtext {height:100%;}
+
+@keyframes blink-effect { 
+    50% { 
+        opacity: 0; 
+    } 
+}
+@keyframes blink-effect2 { 
+    50% { 
+        opacity: 100; 
+    } 
+} 
+.dot { 
+    height: 20%; margin-left: 20px; margin-top: 7vh;
+    animation: blink-effect 1s step-end infinite; 
+}
+.dot2 { 
+    height: 20%; margin-left: 20px; margin-top: 7vh; opacity: 0;
+    animation: blink-effect2 1s step-end infinite; 
+}
+
+#loading{
+    background-image: url('/ticto/spine/Loading/LoginBg.png'); 
+    background-position : center; 
+    width: 100%; height: 100%;
+    background-repeat : no-repeat;
+    background-size : contain;
+}
